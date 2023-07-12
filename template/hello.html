@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <!--To get any tag automatically , write the name 
+        of the tag and press tab -->
+        {% if name and country %}
+        <h1>Hello {{name}}.Welcome to Zurich, {{country}}.</h1>
+        {% else %}
+        <h1>Hello World.</h1>
+        {% endif %}
+        <ul>
+            {% for product in products %}
+            <li> {{product.title}} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
